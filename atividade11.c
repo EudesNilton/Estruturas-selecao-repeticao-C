@@ -3,12 +3,14 @@
 int main() {
     
     int count = 0;
+    int i = 1;
 
-    for(int i = 1; i <= 50; i++) {
-        if(i % 2 == 0) {
-            printf("%d é par\n", i);
+    while(i <= 50) {
+        if(i % 2 != 0) {
+            printf("%d é ímpar\n", i);
             count += i;
         }
+        i++;
     }
 
     printf("O resultado final é %d\n", count);
